@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unfiltered Wear — Dark Humor Tees</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #0d0d0d;
+  --paper: #f5f0e8;
+  --accent: #e8401c;
+}
+
+body {
+  background: var(--paper);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* HEADER */
+header {
+  background: var(--ink);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.logo {
+  font-family: 'Bebas Neue';
+  font-size: 2rem;
+}
+
+/* HERO */
+.hero {
+  background: var(--ink);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-family: 'Bebas Neue';
+  font-size: 4rem;
+}
+.hero p {
+  color: #aaa;
+  margin-top: 1rem;
+}
+
+/* GRID */
+.grid {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+}
+
+.title {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.price {
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.8rem;
+  background: var(--ink);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: var(--accent);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Unfiltered Wear</div>
+</header>
+
+<section class="hero">
+  <h1>Dark Humor Tees</h1>
+  <p>Not for everyone. Exactly for you.</p>
+</section>
+
+<section class="grid">
+
+  <!-- PRODUCT 1 -->
+  <div class="card">
+    <img src="dead_inside_museum.png" alt="Dead Inside Tee">
+    <div class="title">Dead Inside — Museum Edition</div>
+    <div class="price">From $24</div>
+    <a class="btn" href="https://www.teepublic.com/t-shirt/89798122-dead-inside?store_id=4328402" target="_blank">
+      Shop Now
+    </a>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="card">
+    <img src="common_sense.png" alt="Common Sense Tee">
+    <div class="title">Un-Common Sense</div>
+    <div class="price">From $24</div>
+    <a class="btn" href="https://www.teepublic.com/t-shirt/89796528-un-common-sense?store_id=4328402" target="_blank">
+      Shop Now
+    </a>
+  </div>
+
+</section>
+
+<footer>
+  <p>Powered by TeePublic • Unfiltered Wear</p>
+</footer>
+
+</body>
+</html>
