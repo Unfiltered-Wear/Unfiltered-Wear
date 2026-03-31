@@ -53,8 +53,22 @@ header {
 .grid {
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* CARD */
@@ -63,17 +77,19 @@ header {
   border: 1px solid #ddd;
   padding: 1rem;
   text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
   transition: 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .card img {
   width: 100%;
-  height: 320px;
+  height: 300px;
   object-fit: contain;
 }
 
@@ -84,7 +100,7 @@ header {
 
 .price {
   color: var(--accent);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -129,32 +145,34 @@ footer {
 
   <!-- PRODUCT 1 -->
   <div class="card">
-    <img src="dead_inside_museum.png" alt="Dead Inside Tee">
+    <img src="dead_inside_museum.png">
     <div class="title">Dead Inside — Museum Edition</div>
     <div class="price">From $24</div>
-    <a class="btn" href="https://www.teepublic.com/t-shirt/89798122-dead-inside?store_id=4328402" target="_blank">
-      Shop Now
-    </a>
+    <a class="btn" href="https://www.teepublic.com/t-shirt/89798122-dead-inside?store_id=4328402" target="_blank">Shop Now</a>
   </div>
 
   <!-- PRODUCT 2 -->
   <div class="card">
-    <img src="common_sense.png" alt="Common Sense Tee">
+    <img src="common_sense.png">
     <div class="title">Un-Common Sense</div>
     <div class="price">From $24</div>
-    <a class="btn" href="https://www.teepublic.com/t-shirt/89796528-un-common-sense?store_id=4328402" target="_blank">
-      Shop Now
-    </a>
+    <a class="btn" href="https://www.teepublic.com/t-shirt/89796528-un-common-sense?store_id=4328402" target="_blank">Shop Now</a>
   </div>
 
   <!-- PRODUCT 3 -->
   <div class="card">
-    <img src="love_people.png" alt="Love People From a Distance Tee">
+    <img src="love_people.png">
     <div class="title">I Love People — From a Distance</div>
     <div class="price">From $24</div>
-    <a class="btn" href="https://www.teepublic.com/t-shirt/89841307-selective-hater" target="_blank">
-      Shop Now
-    </a>
+    <a class="btn" href="https://www.teepublic.com/t-shirt/89841307-selective-hater" target="_blank">Shop Now</a>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="card">
+    <img src="trust_issues.png">
+    <div class="title">Trust Issues — I Just Remember Things</div>
+    <div class="price">From $24</div>
+    <a class="btn" href="https://www.teepublic.com/t-shirt/89842292-broken-heart" target="_blank">Shop Now</a>
   </div>
 
 </section>
